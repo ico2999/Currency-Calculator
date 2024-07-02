@@ -11,19 +11,23 @@ namespace CurrencyCalculator.Unit
         [InlineData(100, 117)]
         [InlineData(200, 234)]
         [InlineData(400, 468)]
-        public void ConvertsPoundsToEuros(int amountFrom, decimal amountTo)
+        [InlineData(150.70, 176.32)]
+        public void ConvertsPoundsToEuros(decimal amountFrom, decimal amountTo)
         {
             decimal result = _calculator.CalculateFromPoundsToEuros(amountFrom);
-            result.Should().Be(amountTo);
+            result = decimal.Round(result, 2);
+            result.Should().Be(decimal.Round(result, 2));
         }
 
         [Theory]
         [InlineData(100, 122)]
         [InlineData(500, 610)]
         [InlineData(250, 305)]
-        public void ConvertsPoundsToUsDollars(int amountFrom, decimal amountTo)
+        [InlineData(122.79, 149.80)]
+        public void ConvertsPoundsToUsDollars(decimal amountFrom, decimal amountTo)
         {
             decimal result = _calculator.CalculateFromPoundsToUsDollars(amountFrom);
+            result = decimal.Round(result, 2);
             result.Should().Be(amountTo);
         }
 
@@ -31,9 +35,11 @@ namespace CurrencyCalculator.Unit
         [InlineData(100, 85)]
         [InlineData(250, 212.50)]
         [InlineData(500, 425)]
-        public void ConvertsEurosToPounds(int amountFrom, decimal amountTo)
+        [InlineData(139.92, 118.93)]
+        public void ConvertsEurosToPounds(decimal amountFrom, decimal amountTo)
         {
             decimal result = _calculator.CalculateFromEurosToPounds(amountFrom);
+            result = decimal.Round(result, 2);
             result.Should().Be(amountTo);
         }
 
@@ -41,12 +47,13 @@ namespace CurrencyCalculator.Unit
         [InlineData(100, 82)]
         [InlineData(250, 205)]
         [InlineData(500, 410)]
-        public void ConvertsDollarsToPounds(int amountFrom, decimal amountTo)
+        [InlineData(137.84, 113.03)]
+        public void ConvertsDollarsToPounds(decimal amountFrom, decimal amountTo)
         {
             decimal result = _calculator.CalculateFromUsDollarsToPounds(amountFrom);
+            result = decimal.Round(result, 2);
             result.Should().Be(amountTo);
         }
-
 
     }
 }

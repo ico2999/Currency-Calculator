@@ -2,36 +2,31 @@
 {
     public class Calculator
     {
-        public decimal CalculateFromEurosToPounds()
+        public decimal CalculateFromEurosToPounds(int euro)
         {
-            int euro = 100;
             decimal exchangeRate = 0.85m;
             decimal result = ExchangeRate(euro, exchangeRate);
             return result;
         }
 
-        public decimal CalculateFromUsDollarsToPounds()
+        public decimal CalculateFromUsDollarsToPounds(int dollars)
         {
-            int usDollars = 100;
             decimal exchangeRate = 0.82m;
-            decimal result = ExchangeRate(usDollars, exchangeRate);
+            decimal result = ExchangeRate(dollars, exchangeRate);
             return result;
         }
 
-        public decimal CalculateFromPoundsToEuros()
+        public decimal CalculateFromPoundsToEuros(int pound)
         {
-            int pound = 100;
             decimal exchangeRate = 1.17m;
             decimal result = ExchangeRate(pound, exchangeRate);
             return result;
-
         }
 
-        public decimal CalculateFromPoundsToUsDollars()
+        public decimal CalculateFromPoundsToUsDollars(int dollar)
         {
-            int pound = 100;
             decimal exchangeRate = 1.22m;
-            decimal result = ExchangeRate(pound, exchangeRate);
+            decimal result = ExchangeRate(dollar, exchangeRate);
             return result;
         }
 

@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
@@ -26,9 +26,9 @@
               "Title": "CalculatorShould.cs",
               "DocumentMoniker": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator.Unit\\CalculatorShould.cs",
               "RelativeDocumentMoniker": "CurrencyCalculator.Unit\\CalculatorShould.cs",
-              "ToolTip": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator.Unit\\CalculatorShould.cs",
-              "RelativeToolTip": "CurrencyCalculator.Unit\\CalculatorShould.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ToolTip": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator.Unit\\CalculatorShould.cs*",
+              "RelativeToolTip": "CurrencyCalculator.Unit\\CalculatorShould.cs*",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAswHwAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-01T13:46:52.881Z",
               "EditorCaption": ""
@@ -41,13 +41,13 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "bcce9b50-2c46-4692-8dac-afe78d73c3cc",
+        "Id": "75ac9533-d240-486a-8fe1-4eeb401f0bac",
         "Display": 1,
-        "X": 149,
-        "Y": -49,
-        "Width": 1932,
-        "Height": 1043,
-        "WindowState": 2
+        "X": 85,
+        "Y": 224,
+        "Width": 1436,
+        "Height": 990,
+        "WindowState": 0
       },
       "DocumentGroups": [
         {
@@ -60,9 +60,9 @@
               "Title": "Calculator.cs",
               "DocumentMoniker": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator\\Calculator.cs",
               "RelativeDocumentMoniker": "CurrencyCalculator\\Calculator.cs",
-              "ToolTip": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator\\Calculator.cs",
-              "RelativeToolTip": "CurrencyCalculator\\Calculator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAWAAAA",
+              "ToolTip": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator\\Calculator.cs*",
+              "RelativeToolTip": "CurrencyCalculator\\Calculator.cs*",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAIwGkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-01T13:55:00.028Z",
               "EditorCaption": ""

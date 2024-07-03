@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyCalculator", "CurrencyCalculator\CurrencyCalculator.csproj", "{0871FB86-7806-4803-A48C-A263274DD521}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyCalculator", "CurrencyCalculator\CurrencyCalculator.csproj", "{0871FB86-7806-4803-A48C-A263274DD521}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyCalculator.Unit", "CurrencyCalculator.Unit\CurrencyCalculator.Unit.csproj", "{4685406E-550F-4F22-83D6-1C9EB15AD0B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyCalculator.Unit", "CurrencyCalculator.Unit\CurrencyCalculator.Unit.csproj", "{4685406E-550F-4F22-83D6-1C9EB15AD0B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyCalculator.API", "CurrencyCalculator.API\CurrencyCalculator.API.csproj", "{8910D4CE-9436-4DB7-AD95-8565CFF58E86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyCalculatorAPI.Unit", "CurrencyCalculatorAPI.Unit\CurrencyCalculatorAPI.Unit.csproj", "{D65D809A-FBF9-44B7-84C1-26284EC8F5CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{4685406E-550F-4F22-83D6-1C9EB15AD0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4685406E-550F-4F22-83D6-1C9EB15AD0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4685406E-550F-4F22-83D6-1C9EB15AD0B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8910D4CE-9436-4DB7-AD95-8565CFF58E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8910D4CE-9436-4DB7-AD95-8565CFF58E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8910D4CE-9436-4DB7-AD95-8565CFF58E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8910D4CE-9436-4DB7-AD95-8565CFF58E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D65D809A-FBF9-44B7-84C1-26284EC8F5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D65D809A-FBF9-44B7-84C1-26284EC8F5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D65D809A-FBF9-44B7-84C1-26284EC8F5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D65D809A-FBF9-44B7-84C1-26284EC8F5CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

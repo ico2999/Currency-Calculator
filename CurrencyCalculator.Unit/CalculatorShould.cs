@@ -18,7 +18,7 @@ namespace CurrencyCalculator.Unit
         {
             decimal result = _calculator.CalculateFromPoundsToEuros(amountFrom, new DateTime(2010, 1, 1 ));
             result = decimal.Round(result, 2);
-            result.Should().Be(decimal.Round(result, 2));
+            result.Should().Be(amountTo);
         }
 
         [Theory]

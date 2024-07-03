@@ -9,12 +9,63 @@
     {
       "AbsoluteMoniker": "D:0:0:{0871FB86-7806-4803-A48C-A263274DD521}|CurrencyCalculator\\CurrencyCalculator.csproj|c:\\users\\ben.simpson\\source\\repos\\currencycalculator\\currency-calculator\\currencycalculator\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0871FB86-7806-4803-A48C-A263274DD521}|CurrencyCalculator\\CurrencyCalculator.csproj|solutionrelative:currencycalculator\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0871FB86-7806-4803-A48C-A263274DD521}|CurrencyCalculator\\CurrencyCalculator.csproj|c:\\users\\ben.simpson\\source\\repos\\currencycalculator\\currency-calculator\\currencycalculator\\currencytypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0871FB86-7806-4803-A48C-A263274DD521}|CurrencyCalculator\\CurrencyCalculator.csproj|solutionrelative:currencycalculator\\currencytypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CurrencyTypeEnum.cs",
+              "DocumentMoniker": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator\\CurrencyTypeEnum.cs",
+              "RelativeDocumentMoniker": "CurrencyCalculator\\CurrencyTypeEnum.cs",
+              "ToolTip": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator\\CurrencyTypeEnum.cs",
+              "RelativeToolTip": "CurrencyCalculator\\CurrencyTypeEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T08:52:34.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator\\Calculator.cs",
+              "RelativeDocumentMoniker": "CurrencyCalculator\\Calculator.cs",
+              "ToolTip": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator\\Calculator.cs",
+              "RelativeToolTip": "CurrencyCalculator\\Calculator.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAwGgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T13:55:00.028Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "c3abe5a1-e909-44ba-93d3-aefc3261a9b6",
+        "Display": 1,
+        "X": -511,
+        "Y": 380,
+        "Width": 1907,
+        "Height": 939,
+        "WindowState": 2
+      },
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -26,45 +77,11 @@
               "Title": "CalculatorShould.cs",
               "DocumentMoniker": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator.Unit\\CalculatorShould.cs",
               "RelativeDocumentMoniker": "CurrencyCalculator.Unit\\CalculatorShould.cs",
-              "ToolTip": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator.Unit\\CalculatorShould.cs*",
-              "RelativeToolTip": "CurrencyCalculator.Unit\\CalculatorShould.cs*",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAswHwAAAApAAAA",
+              "ToolTip": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator.Unit\\CalculatorShould.cs",
+              "RelativeToolTip": "CurrencyCalculator.Unit\\CalculatorShould.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-01T13:46:52.881Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "75ac9533-d240-486a-8fe1-4eeb401f0bac",
-        "Display": 1,
-        "X": 85,
-        "Y": 224,
-        "Width": 1436,
-        "Height": 990,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Calculator.cs",
-              "DocumentMoniker": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator\\Calculator.cs",
-              "RelativeDocumentMoniker": "CurrencyCalculator\\Calculator.cs",
-              "ToolTip": "C:\\Users\\Ben.Simpson\\source\\repos\\CurrencyCalculator\\Currency-Calculator\\CurrencyCalculator\\Calculator.cs*",
-              "RelativeToolTip": "CurrencyCalculator\\Calculator.cs*",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAIwGkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T13:55:00.028Z",
               "EditorCaption": ""
             }
           ]

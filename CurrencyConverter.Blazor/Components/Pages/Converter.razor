@@ -71,39 +71,45 @@
 	public CurrencyTypeEnum To { get; set; }
 	public CurrencyTypeEnum From { get; set; }
 	public DateTime ConversionDate { get; set; }
-	public decimal Result { get; set; }
+	public string Result { get; set; }
 
 	private void Calculate()
 	{
 		if (From == CurrencyTypeEnum.Gbp && To == CurrencyTypeEnum.Eur)
 		{
 			decimal result = _calculator.CalculateFromPoundsToEuros(Amount, ConversionDate);
-			Result = result;
+			string currencyResult = "€" + result.ToString("F");
+			Result = currencyResult;
 		}
 		else if (From == CurrencyTypeEnum.Gbp && To == CurrencyTypeEnum.Usd)
 		{
 			decimal result = _calculator.CalculateFromPoundsToUsDollars(Amount, ConversionDate);
-			Result = result;
+			string currencyResult = "$" + result.ToString("F");
+			Result = currencyResult;
 		}
 		else if (From == CurrencyTypeEnum.Eur && To == CurrencyTypeEnum.Gbp)
 		{
 			decimal result = _calculator.CalculateFromEurosToPounds(Amount, ConversionDate);
-			Result = result;
+			string currencyResult = "£" + result.ToString("F");
+			Result = currencyResult;
 		}
 		else if (From == CurrencyTypeEnum.Eur && To == CurrencyTypeEnum.Usd)
 		{
 			decimal result = _calculator.CalculateFromEurosToUsDollars(Amount, ConversionDate);
-			Result = result;
+			string currencyResult = "$" + result.ToString("f");
+			Result = currencyResult;
 		}
 		else if (From == CurrencyTypeEnum.Usd && To == CurrencyTypeEnum.Gbp)
 		{
 			decimal result = _calculator.CalculateFromUsDollarsToPounds(Amount, ConversionDate);
-			Result = result;
+			string currencyResult = "£" + result.ToString("F");
+			Result = currencyResult;
 		}
 		else if (From == CurrencyTypeEnum.Usd && To == CurrencyTypeEnum.Eur)
 		{
 			decimal result = _calculator.CalculateFromUsDollarsToEuros(Amount, ConversionDate);
-			Result = result;
+			string currencyResult = "€" + result.ToString("F");
+			Result = currencyResult; 
 		}
 	}
 

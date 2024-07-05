@@ -12,3 +12,7 @@ Currency converter that can convert between £, $, € and CA$ depending on a da
 ![image](https://github.com/ico2999/Currency-Calculator/assets/171598297/293a2cf9-d01d-405a-9a03-7ae679e6eb55)  
 
 ![image](https://github.com/ico2999/Currency-Calculator/assets/171598297/9a868e71-0227-4aa6-b673-636c71ce2119)
+
+![image](https://github.com/ico2999/Currency-Calculator/assets/171598297/b21f2ff4-b2bc-436f-b923-f7ff17cb1fcd)  
+
+![image](https://github.com/ico2999/Currency-Calculator/assets/171598297/72173a1b-d3eb-45b2-9233-04665c478ec3)

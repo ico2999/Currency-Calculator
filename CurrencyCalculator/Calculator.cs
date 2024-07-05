@@ -7,49 +7,14 @@ namespace CurrencyCalculator
 {
     public class Calculator
     {
-        public decimal CalculateFromEurosToPounds(decimal euro, DateTime exchangeRateDate)
 
-        {
-            decimal result = CurrencyFromAndTo(euro, CurrencyTypeEnum.Gbp, CurrencyTypeEnum.Eur, exchangeRateDate);
-            return result;
-        }
-
-        public decimal CalculateFromUsDollarsToPounds(decimal dollar, DateTime exchangeRateDate)
-        {
-            decimal result = CurrencyFromAndTo(dollar, CurrencyTypeEnum.Gbp, CurrencyTypeEnum.Usd, exchangeRateDate);
-            return result;
-        }
-
-        public decimal CalculateFromPoundsToEuros(decimal pound, DateTime exchangeRateDate)
-        {
-            decimal result = CurrencyFromAndTo(pound, CurrencyTypeEnum.Eur, CurrencyTypeEnum.Gbp, exchangeRateDate);
-            return result;
-        }
-
-        public decimal CalculateFromPoundsToUsDollars(decimal pound, DateTime exchangeRateDate)
-        {
-            decimal result = CurrencyFromAndTo(pound, CurrencyTypeEnum.Usd, CurrencyTypeEnum.Gbp, exchangeRateDate);
-            return result;
-        }
-
-        public decimal CalculateFromUsDollarsToEuros(decimal dollar, DateTime exchangeRateDate)
-        {
-            decimal result = CurrencyFromAndTo(dollar, CurrencyTypeEnum.Eur, CurrencyTypeEnum.Usd, exchangeRateDate);
-            return result;
-        }
-
-        public decimal CalculateFromEurosToUsDollars(decimal euro, DateTime exchangeRateDate)
-        {
-            decimal result = CurrencyFromAndTo(euro, CurrencyTypeEnum.Usd, CurrencyTypeEnum.Eur, exchangeRateDate);
-            return result;
-        }
 
         private decimal Convert(decimal currencyValue, decimal exchangeRate)
         {
             return currencyValue * exchangeRate;
         }
 
-        private decimal CurrencyFromAndTo(decimal amountFrom, CurrencyTypeEnum currencyTo, CurrencyTypeEnum currencyFrom, DateTime exchangeRateDate)
+        public decimal ConvertCurrency(decimal amountFrom, CurrencyTypeEnum currencyFrom, CurrencyTypeEnum currencyTo, DateTime exchangeRateDate)
         {
             decimal exchangeRate = 0;
             if (exchangeRateDate == new DateTime(2010, 1, 1) && currencyFrom == CurrencyTypeEnum.Gbp && currencyTo == CurrencyTypeEnum.Eur)

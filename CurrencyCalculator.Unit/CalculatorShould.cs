@@ -16,7 +16,7 @@ namespace CurrencyCalculator.Unit
         [InlineData(150.70, 176.32)]
         public void ConvertsPoundsToEuros(decimal amountFrom, decimal amountTo)
         {
-            decimal result = _calculator.CalculateFromPoundsToEuros(amountFrom, new DateTime(2010, 1, 1 ));
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Gbp, CurrencyTypeEnum.Eur, new DateTime(2010, 1, 1 ));
             result = decimal.Round(result, 2);
             result.Should().Be(amountTo);
         }
@@ -28,7 +28,7 @@ namespace CurrencyCalculator.Unit
         [InlineData(122.79, 149.80)]
         public void ConvertsPoundsToUsDollars(decimal amountFrom, decimal amountTo)
         {
-            decimal result = _calculator.CalculateFromPoundsToUsDollars(amountFrom, new DateTime(2010, 1, 1));
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Gbp, CurrencyTypeEnum.Usd, new DateTime(2010, 1, 1));
             result = decimal.Round(result, 2);
             result.Should().Be(amountTo);
         }
@@ -40,7 +40,7 @@ namespace CurrencyCalculator.Unit
         [InlineData(139.92, 118.93)]
         public void ConvertsEurosToPounds(decimal amountFrom, decimal amountTo)
         {
-            decimal result = _calculator.CalculateFromEurosToPounds(amountFrom, new DateTime(2010, 1, 1));
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Eur, CurrencyTypeEnum.Gbp, new DateTime(2010, 1, 1));
             result = decimal.Round(result, 2);
             result.Should().Be(amountTo);
         }
@@ -52,7 +52,7 @@ namespace CurrencyCalculator.Unit
         [InlineData(137.84, 113.03)]
         public void ConvertsDollarsToPounds(decimal amountFrom, decimal amountTo)
         {
-            decimal result = _calculator.CalculateFromUsDollarsToPounds(amountFrom, new DateTime(2010, 1, 1));
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Usd, CurrencyTypeEnum.Gbp, new DateTime(2010, 1, 1));
             result = decimal.Round(result, 2);
             result.Should().Be(amountTo);
         }
@@ -66,7 +66,7 @@ namespace CurrencyCalculator.Unit
         {
             decimal amountFrom = 100;
             DateTime olderDate = new DateTime(year, month, day);
-            decimal result = _calculator.CalculateFromPoundsToEuros(amountFrom, olderDate);
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Gbp, CurrencyTypeEnum.Eur, olderDate);
             result.Should().Be(amountTo);
         }
 
@@ -77,7 +77,7 @@ namespace CurrencyCalculator.Unit
         {
             decimal amountFrom = 100;
             DateTime olderDate = new DateTime(year, month, day);
-            decimal result = _calculator.CalculateFromPoundsToUsDollars(amountFrom, olderDate);
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Gbp, CurrencyTypeEnum.Usd, olderDate);
             result.Should().Be(amountTo);
         }
 
@@ -88,7 +88,7 @@ namespace CurrencyCalculator.Unit
         {
             decimal amountFrom = 100;
             DateTime olderDate = new DateTime(year, month, day);
-            decimal result = _calculator.CalculateFromUsDollarsToPounds(amountFrom, olderDate);
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Usd, CurrencyTypeEnum.Gbp, olderDate);
             result.Should().Be(amountTo);
         }
 
@@ -99,7 +99,7 @@ namespace CurrencyCalculator.Unit
         {
             decimal amountFrom = 100;
             DateTime olderDate = new DateTime(year, month, day);
-            decimal result = _calculator.CalculateFromUsDollarsToEuros(amountFrom, olderDate);
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Usd, CurrencyTypeEnum.Eur, olderDate);
             result.Should().Be(amountTo);
         }
 
@@ -110,7 +110,7 @@ namespace CurrencyCalculator.Unit
         {
             decimal amountFrom = 100;
             DateTime olderDate = new DateTime(year, month, day);
-            decimal result = _calculator.CalculateFromEurosToPounds(amountFrom, olderDate);
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Eur, CurrencyTypeEnum.Gbp, olderDate);
             result.Should().Be(amountTo);
         }
 
@@ -121,7 +121,7 @@ namespace CurrencyCalculator.Unit
         {
             decimal amountFrom = 100;
             DateTime olderDate = new DateTime(year, month, day);
-            decimal result = _calculator.CalculateFromEurosToUsDollars(amountFrom, olderDate);
+            decimal result = _calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Eur, CurrencyTypeEnum.Usd, olderDate);
             result.Should().Be(amountTo);
         }
 

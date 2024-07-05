@@ -43,9 +43,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-	    CurrencyCalculator.Calculator calculator = new Calculator();
-
-	    decimal result = calculator.CalculateFromPoundsToEuros(100, new DateTime(2010, 1, 1));
 
         // Simulate asynchronous loading to demonstrate streaming rendering
         await Task.Delay(500);

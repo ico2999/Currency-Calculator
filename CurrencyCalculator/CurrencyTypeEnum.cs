@@ -11,5 +11,6 @@ namespace CurrencyCalculator
         Eur,
         Gbp,
         Usd,
+        Cad,
     }
 }

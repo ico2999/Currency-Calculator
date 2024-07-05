@@ -15,7 +15,7 @@
 	
 	
 	
-	
+	<br/>
 	<label for="CurrencyFrom">Currency to convert from:</label><br>
 	<InputRadioGroup @bind-Value="From">
 		@foreach (var currency in Enum.GetValues<CurrencyTypeEnum>())
@@ -31,7 +31,7 @@
 
 	</InputRadioGroup>
 
-
+	<br/>
 	<label for="currencyTo">Currency to convert to:</label><br>
 	<InputRadioGroup @bind-Value="To">
 
@@ -45,18 +45,20 @@
 			<br/>
 		}
 	</InputRadioGroup>
-
+	
+	<br/>
 	<label for="date">What date would you like the exchange rate to come from:</label><br>
 	<input type="text" @bind="ConversionDate"/><br>
 
 
-
+	<br/>
 	<button type="button" @onclick="this.Calculate" class="btn btn-primary">calculate</button>
 	<br/>
 </form>
 
 
 <div>
+
 	<br/>
 	<span>
 		<div class="alert alert-primary" role="alert">
@@ -65,12 +67,6 @@
 		</div>
 	</span>
 
-
-	<span>
-		The final amount is:
-		@this.Result
-	</span>
-	<br/>
 </div>
 
 
@@ -84,42 +80,10 @@
 
 	private void Calculate()
 	{
-		if (From == CurrencyTypeEnum.Gbp && To == CurrencyTypeEnum.Eur)
-		{
-			decimal result = _calculator.CalculateFromPoundsToEuros(Amount, ConversionDate);
-			string currencyResult = "€" + result.ToString("F");
-			Result = currencyResult;
-		}
-		else if (From == CurrencyTypeEnum.Gbp && To == CurrencyTypeEnum.Usd)
-		{
-			decimal result = _calculator.CalculateFromPoundsToUsDollars(Amount, ConversionDate);
-			string currencyResult = "$" + result.ToString("F");
-			Result = currencyResult;
-		}
-		else if (From == CurrencyTypeEnum.Eur && To == CurrencyTypeEnum.Gbp)
-		{
-			decimal result = _calculator.CalculateFromEurosToPounds(Amount, ConversionDate);
-			string currencyResult = "£" + result.ToString("F");
-			Result = currencyResult;
-		}
-		else if (From == CurrencyTypeEnum.Eur && To == CurrencyTypeEnum.Usd)
-		{
-			decimal result = _calculator.CalculateFromEurosToUsDollars(Amount, ConversionDate);
-			string currencyResult = "$" + result.ToString("f");
-			Result = currencyResult;
-		}
-		else if (From == CurrencyTypeEnum.Usd && To == CurrencyTypeEnum.Gbp)
-		{
-			decimal result = _calculator.CalculateFromUsDollarsToPounds(Amount, ConversionDate);
-			string currencyResult = "£" + result.ToString("F");
-			Result = currencyResult;
-		}
-		else if (From == CurrencyTypeEnum.Usd && To == CurrencyTypeEnum.Eur)
-		{
-			decimal result = _calculator.CalculateFromUsDollarsToEuros(Amount, ConversionDate);
-			string currencyResult = "€" + result.ToString("F");
-			Result = currencyResult; 
-		}
+		
+			decimal result = _calculator.ConvertCurrency(Amount, From, To, ConversionDate);
+			Result = result.ToString("F");
+
 	}
 
 

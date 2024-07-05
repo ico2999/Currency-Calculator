@@ -43,7 +43,7 @@ namespace CurrencyCalculator.API
                 return result;
             }
 
-            throw new Exception("No currency conversion available");
+            throw new Exception("No currency conversion available.");
         }
     }
 }

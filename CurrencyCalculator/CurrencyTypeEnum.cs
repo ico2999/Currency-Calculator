@@ -12,5 +12,7 @@ namespace CurrencyCalculator
         Gbp,
         Usd,
         Cad,
+        Nor,
+        Nzd
     }
 }

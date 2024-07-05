@@ -125,5 +125,22 @@ namespace CurrencyCalculator.Unit
             result.Should().Be(amountTo);
         }
 
-    }
+        [Fact]
+        public void TestWithThirdPartyData()
+        {
+	        decimal amountFrom = 100;
+	        DateTime exchangeRateDate = new DateTime(2011, 2, 1);
+	        List<CurrencyData> currencyData = new List<CurrencyData>
+	        {
+		        new CurrencyData(CurrencyTypeEnum.Nor, CurrencyTypeEnum.Nzd, new DateTime(2011, 2, 1), 12.12m)
+	        };
+
+			Calculator calculator = new Calculator(currencyData);
+
+			decimal result = calculator.ConvertCurrency(amountFrom, CurrencyTypeEnum.Nor, CurrencyTypeEnum.Nzd, exchangeRateDate);
+
+	        result.Should().Be(1212m);
+        }
+
+	}
 }
